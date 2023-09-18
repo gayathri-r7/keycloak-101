@@ -1,4 +1,4 @@
-# Todo-UI
+# todo-ui
 
 ## Project setup
 ```

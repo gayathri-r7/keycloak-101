@@ -19,7 +19,7 @@ $ go mod vendor
 $ go run todo.go
 ```
 
-#### To check whether the todos are stored in the database:-
+### MongoDB Commands
 
 ```sh
 $ docker exec -it <ContainerID> bash

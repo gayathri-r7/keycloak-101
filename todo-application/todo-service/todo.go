@@ -27,7 +27,8 @@ func ListTodosEndPoint(w http.ResponseWriter, r *http.Request) {
 	if len(todos) != 0 {
 		respondWithJson(w, http.StatusOK, todos)
 	} else {
-		respondWithJson(w, http.StatusOK, map[string]string{"message": "No todos found"})
+		todos := []Todo{}
+		respondWithJson(w, http.StatusOK, todos)
 	}
 }
 
@@ -76,6 +77,7 @@ func CreateTodoEndPoint(w http.ResponseWriter, r *http.Request) {
 	UsrID := strings.Replace(uuid, "-", "", -1)
 
 	todo.ID = "tsk" + string(UsrID)
+	todo.Status = "In-Progress"
 	if err := dao.Insert(todo); err != nil {
 		respondWithError(w, http.StatusInternalServerError, err.Error())
 		return
