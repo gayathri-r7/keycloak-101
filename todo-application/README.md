@@ -1,6 +1,6 @@
 # Todo Application
 
-## How to Run?
+A to-do list application is an application that allows users to create lists of tasks that can be sorted, edited, tracked, and completed. 
 
 ### MongoDB Configuration
 
@@ -28,6 +28,70 @@ $ npm run serve
 ```
 
 Access the todo application at http://localhost:8080/
+
+### Rest API calls
+
+```sh
+POST - http://localhost:3000/todo
+REQUEST BODY:
+{
+"task": "Kecycloak blog",
+"description": "Create a blog post about keycloak."
+}
+RESPONSE CODE: 201
+RESPONSE:
+{
+  "message": "Todo created successfully.",
+  "todoId": "tsk209f541be1a84973a535f0ad19574558"
+}
+---------------------------------------------------
+
+GET - http://localhost:3000/todo/<TaskID>
+RESPONSE CODE: 200
+RESPONSE:
+{
+  "id": "tsk209f541be1a84973a535f0ad19574558",
+  "task": "Kecycloak blog",
+  "description": "Create a blog post about keycloak.",
+  "status": "In-Progress"
+}
+---------------------------------------------------
+
+PUT - http://localhost:3000/todo/<TaskID>
+REQUEST BODY:
+{
+"task": "Kecycloak blog",
+"description": "Create a blog post about keycloak.",
+"status": "Completed"
+}
+RESPONSE CODE: 200
+RESPONSE:
+{
+  "message": "Todo updated successfully."
+}
+---------------------------------------------------
+
+GET - http://localhost:3000/todos
+RESPONSE CODE: 200
+RESPONSE:
+[
+    {
+        "id": "tsk209f541be1a84973a535f0ad19574558",
+        "task": "Kecycloak blog",
+        "description": "Create a blog post about keycloak.",
+        "status": "In-Progress"
+    }
+]
+---------------------------------------------------
+
+DELETE - http://localhost:3000/todo/<TaskID>
+RESPONSE CODE: 200
+RESPONSE:
+{
+  "message": "Todos deleted successfully"
+}
+---------------------------------------------------
+```
 
 ### MongoDB Commands
 
