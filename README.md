@@ -4,7 +4,7 @@ Keycloak is an open source software product to allow single sign-on with identit
 
 ## Docker network
 
-To make it easy to connect Keycloak to OpenLDAP and the mail server create a user defined network:
+To make it easy to connect Keycloak to OpenLDAP create a user defined network:
 
 ```sh
 $ docker network create app-network
@@ -54,7 +54,7 @@ $ docker run --name mongodb --publish 27017:27017 -d mongo:4.0.4
 ### Backend service
 
 ```sh
-$ cd todo-service
+$ cd todo-application/todo-service
 $ rm -rf go.mod go.sum vendor
 $ go mod init todoservice
 $ go mod tidy
@@ -65,7 +65,7 @@ $ go run todo.go
 ### Frontend service
 
 ```sh
-$ cd todo-ui
+$ cd todo-application/todo-ui
 $ npm install
 $ npm run serve
 ```
