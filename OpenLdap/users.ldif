@@ -1,0 +1,134 @@
+# HR Team, example.com
+dn: ou=hr,dc=example,dc=com
+objectClass: organizationalUnit
+ou: hr
+
+# Developers Team, example.com
+dn: ou=dev,dc=example,dc=com
+objectClass: organizationalUnit
+ou: dev
+
+# IT Team, example.com
+dn: ou=it,dc=example,dc=com
+objectClass: organizationalUnit
+ou: it
+
+# Infrastructure Team, example.com
+dn: ou=infrastructure,dc=example,dc=com
+objectClass: organizationalUnit
+ou: infrastructure
+
+# Finance Team, example.com
+dn: ou=finance,dc=example,dc=com
+objectClass: organizationalUnit
+ou: finance
+
+# People Team, example.com
+dn: ou=people,dc=example,dc=com
+objectClass: organizationalUnit
+ou: people
+
+# gayathri, dev, example.com
+dn: cn=gayathri,ou=dev,dc=example,dc=com
+cn: gayathri
+givenname: gayathri
+sn: r
+mail: gayathri@example.com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+userPassword:: Z2F5YXRocmk=
+uid: gayathri
+uidNumber: 1000
+gidNumber: 1000
+homeDirectory: /home/gayathri
+
+# dannel, it, example.com
+dn: cn=dannel,ou=it,dc=example,dc=com
+cn: dannel
+givenname: dannel
+sn: reo
+mail: dannel.reo@example.com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+userPassword:: dmlub3RoaW5p
+uid: dannel
+uidNumber: 1001
+gidNumber: 1001
+homeDirectory: /home/dannel
+
+# adam, dev, example.com
+dn: cn=adam,ou=dev,dc=example,dc=com
+cn: adam
+givenname: adam
+sn: s
+mail: adam@example.com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+userPassword:: YWRhbQ==
+uid: adam
+uidNumber: 1002
+gidNumber: 1002
+homeDirectory: /home/adam
+
+# bwilson, dev, example.com
+dn: cn=bwilson,ou=dev,dc=example,dc=com
+cn: bwilson
+givenname: bwilson
+sn: s
+mail: bwilson@example.com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+userPassword:: YndpbHNvbg==
+uid: bwilson
+uidNumber: 1003
+gidNumber: 1003
+homeDirectory: /home/bwilson
+
+# brown, it, example.com
+dn: cn=brown,ou=it,dc=example,dc=com
+cn: brown
+givenname: brown
+sn: j
+mail: brown.j@example.com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+userPassword:: amJyb3du
+uid: jbrown
+uidNumber: 1004
+gidNumber: 1004
+homeDirectory: /home/jbrown
+
+# jack, hr, example.com
+dn: cn=jack,ou=hr,dc=example,dc=com
+cn: jack
+givenname: jack
+sn: j
+mail: jack.j@example.com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+userPassword:: amJyb3du
+uid: jack
+uidNumber: 1005
+gidNumber: 1005
+homeDirectory: /home/jack
+
+# mack, people, example.com
+dn: cn=mack,ou=people,dc=example,dc=com
+cn: mack
+givenname: mack
+sn: j
+mail: mack.j@example.com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+userPassword:: bWFjaw==
+uid: mack
+uidNumber: 1006
+gidNumber: 1006
+homeDirectory: /home/mack

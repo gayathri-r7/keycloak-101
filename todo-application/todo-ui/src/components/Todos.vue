@@ -4,7 +4,6 @@
          <div style="padding-left: 5%" class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <h2 class="text-left">Todo Application</h2>
          </div>
-         <div style="padding-right: 5%"><b-button variant="outline-primary">Logout</b-button></div>
       </nav>
       <div id="app" class="container mt-5">
          <b-card class="mt-3">
