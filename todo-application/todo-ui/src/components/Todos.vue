@@ -122,6 +122,8 @@
         {
           this.listTodos();
           this.makeToast('success', "Task added successfully.");
+          this.model.task = "";
+          this.model.description = "";
           return result;
         }).catch(error =>
         {
